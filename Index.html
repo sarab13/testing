@@ -1,0 +1,2781 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./Style.css">
+
+    <script src="./jquery.min.js"></script>
+
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- Top Navigation Menu -->
+    <div class="topnav">
+        <div class="navBar" onclick="navBar()">
+            <img class="icon" src="./Images/icons8-menu.svg" alt="">
+            <p class="header__text"> ROYAL FOOK LONG AMSTERDAM-2</p>
+        </div>
+
+        <div id="myLinks">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+        </div>
+
+    </div>
+
+    <!-- IMAGE -->
+    <div class="top__image"></div>
+
+    <div class="stick">
+        <!-- COOKING DETAILS -->
+        <div class="cooking__details">
+
+            <!-- DETAIL 1 -->
+            <div class="item">
+                <!-- ICON -->
+                <div>
+                    <img src="./Images/clock.svg" alt="">
+                </div>
+
+                <!-- DEATAILS -->
+                <div class="item__details">
+                    <p class="item__value">43 min</p>
+                    <p class="item__title">Time</p>
+                </div>
+
+                <!-- VERTICAL LINE -->
+                <div class="vertical__line"></div>
+            </div>
+
+            <!-- DETAIL 2 -->
+            <div class="item">
+                <!-- ICON -->
+                <div>
+                    <img src="./Images/bill.svg" alt="">
+                </div>
+
+                <!-- DEATAILS -->
+                <div class="item__details">
+                    <p class="item__value">4 / ∞</p>
+                    <p class="item__title">Rounds</p>
+                </div>
+
+                <!-- VERTICAL LINE -->
+                <div class="vertical__line"></div>
+            </div>
+
+            <!-- DETAIL 3 -->
+            <div class="item">
+                <!-- ICON -->
+                <div>
+                    <img src="./Images/order.svg" alt="">
+                </div>
+
+                <!-- DEATAILS -->
+                <div class="item__details">
+                    <p class="item__value">0 / 20</p>
+                    <p class="item__title">Dishes</p>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- SEARCH BAR -->
+        <div class="wrap">
+            <div class="search">
+                <button type="submit" class="searchButton">
+                    <img src="./Images/search.svg" alt="">
+                </button>
+
+                <input type="text" class="searchTerm" onkeyup="search_food()" placeholder="What are you Craving for?">
+            </div>
+        </div>
+
+        <!-- TOP BUTTONS -->
+        <div class="top__buttons">
+            <!-- 1 -->
+            <button onclick="btn1()" id="topBtn1">
+                <div class="topBtn__icon">
+                    <img src="./Images/drink.svg" alt="">
+                </div>
+                <div class="topBtn__text">
+                    Dranken
+                </div>
+            </button>
+
+            <!-- 2 -->
+            <button onclick="btn2()" id="topBtn2">
+                <div class="topBtn__icon" id="topBtn2">
+                    <img src="./Images/r-menu.svg" alt="">
+                </div>
+                <div class="topBtn__text">
+                    Menu
+                </div>
+            </button>
+
+            <!-- 3 -->
+            <button onclick="btn3()" id="topBtn3">
+                <div class="topBtn__icon" id="topBtn3">
+                    <img src="./Images/dessert.svg" alt="">
+                </div>
+                <div class="topBtn__text">
+                    Dessert
+                </div>
+            </button>
+        </div>
+
+        <!-- CATEGORIES -->
+        <nav>
+            <ul id="mainNav">
+                <!-- DRANKEN  -->
+                <li class="active btn1__default"><a href="#warmeDranken">WARME DRANKEN</a></li>
+
+                <li class="btn1__default"><a href="#frisDranken">FRISDRANKEN</a></li>
+
+                <li class="btn1__default"><a href="#bieren">BIEREN</a></li>
+
+                <li class="btn1__default"><a href="#whiteWijenPerFles">WHITE WIJEN PER FLES</a></li>
+
+                <!-- MENU -->
+                <li class="active btn2__default"><a href="#menuDranken">MENU DRANKEN</a></li>
+
+                <li class="btn2__default"><a href="#menu0">MENU 0</a></li>
+
+                <li class="btn2__default"><a href="#menu1">MENU 1</a></li>
+
+                <li class="btn2__default"><a href="#menu2">MENU 2</a></li>
+
+                <!-- DESSERT -->
+                <li class="active btn3__default"><a href="#dessert">DESSERT</a></li>
+
+                <li class="btn3__default"><a href="#dessert1">dessert 1</a></li>
+
+                <li class="btn3__default"><a href="#dessert2">dessert 2</a></li>
+
+                <li class="btn3__default"><a href="#dessert3">dessert 3</a></li>
+
+            </ul>
+        </nav>
+    </div>
+
+    <!-- DRANKEN -->
+    <!-- NAME THE ID SAME AS THE HREF -->
+    <div id="warmeDranken" class="btn1__default">
+        <h4>Warmedranken</h4>
+        <!-- CARD BODY -->
+        <div class="card__body">
+            <!-- CARD IMAGE -->
+            <div class="card__image">
+                <img src="./Images/coffee.png" alt="">
+            </div>
+
+            <!-- CARD CONTENT -->
+            <div class="card__content">
+                <!-- V LINE -->
+                <div class="card__vLine"></div>
+
+                <!--  -->
+                <div class="card__info">
+                    <p class="card__text">Drink</p>
+                    <div class="card__price">
+                        <p>
+                            $ 2.90
+                        </p>
+                        <img src="./Images/leaf.svg" alt="">
+                    </div>
+
+                    <span></span>
+                </div>
+            </div>
+
+            <!-- CARD BUTTON -->
+            <div>
+                <button class="card__button">
+                    <img src="./Images/plus.svg" alt="">
+                </button>
+            </div>
+            <div class="order test">
+                <div class="order__body">
+                    <!-- ORDER CANCEL -->
+                    <div class="order__cancel">
+                        <img src="./Images/close.svg" alt="">
+                    </div>
+
+                    <!-- ORDER IMAGE -->
+                    <div class="order__image">
+                        <img src="./Images/coffee.png" alt="">
+                    </div>
+
+                    <!-- ORDER NAME -->
+                    <div class="order__name">
+                        Koffie
+                    </div>
+
+                    <!-- ORDER PRICE -->
+                    <div class="order__price">
+                        $ 2.90
+                    </div>
+
+                    <!-- ORDER QUANTITY -->
+                    <div class="order__quantity">
+                        <button class="order__button dec">
+                            <img src="./Images/minus.svg" alt="">
+                        </button>
+                        <div class="quantity">3</div>
+                        <button class="order__button inc">
+                            <img src="./Images/plus.svg" alt="">
+                        </button>
+
+                        <div class="bill">
+                            $ 2.90
+                        </div>
+                    </div>
+
+                    <!-- PLACE ORDER -->
+                    <button class="place__order">
+                        ADD TO ORDER
+                    </button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="frisDranken" class="btn1__default">
+        <h4>Frisdranken</h4>
+        <!-- CARD BODY -->
+        <div class="card__body">
+            <!-- CARD IMAGE -->
+            <div class="card__image">
+                <img src="./Images/coffee.png" alt="">
+            </div>
+
+            <!-- CARD CONTENT -->
+            <div class="card__content">
+                <!-- V LINE -->
+                <div class="card__vLine"></div>
+
+                <!--  -->
+                <div class="card__info">
+                    <p class="card__text">Koffie</p>
+                    <div class="card__price">
+                        <p>
+                            $ 2.90
+                        </p>
+                        <img src="./Images/leaf.svg" alt="">
+                    </div>
+
+                    <span></span>
+                </div>
+            </div>
+
+            <!-- CARD BUTTON -->
+            <div>
+                <button class="card__button">
+                    <img src="./Images/plus.svg" alt="">
+                </button>
+            </div>
+            <div class="order">
+                <div class="order__body">
+                    <!-- ORDER CANCEL -->
+                    <div class="order__cancel">
+                        <img src="./Images/close.svg" alt="">
+                    </div>
+
+                    <!-- ORDER IMAGE -->
+                    <div class="order__image">
+                        <img src="./Images/coffee.png" alt="">
+                    </div>
+
+                    <!-- ORDER NAME -->
+                    <div class="order__name">
+                        Koffie
+                    </div>
+
+                    <!-- ORDER PRICE -->
+                    <div class="order__price">
+                        $ 2.90
+                    </div>
+
+                    <!-- ORDER QUANTITY -->
+                    <div class="order__quantity">
+                        <button class="order__button dec">
+                            <img src="./Images/minus.svg" alt="">
+                        </button>
+                        <div class="quantity">3</div>
+                        <button class="order__button inc">
+                            <img src="./Images/plus.svg" alt="">
+                        </button>
+
+                        <div class="bill">
+                            $ 2.90
+                        </div>
+                    </div>
+
+                    <!-- PLACE ORDER -->
+                    <button class="place__order">
+                        ADD TO ORDER
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- CARD BODY -->
+        <div class="card__body">
+            <!-- CARD IMAGE -->
+            <div class="card__image">
+                <img src="./Images/coffee.png" alt="">
+            </div>
+
+            <!-- CARD CONTENT -->
+            <div class="card__content">
+                <!-- V LINE -->
+                <div class="card__vLine"></div>
+
+                <!--  -->
+                <div class="card__info">
+                    <p class="card__text">Koffie</p>
+                    <div class="card__price">
+                        <p>
+                            $ 2.90
+                        </p>
+                        <img src="./Images/leaf.svg" alt="">
+                    </div>
+
+                    <span></span>
+                </div>
+            </div>
+
+            <!-- CARD BUTTON -->
+            <div>
+                <button class="card__button">
+                    <img src="./Images/plus.svg" alt="">
+                </button>
+            </div>
+            <div class="order">
+                <div class="order__body">
+                    <!-- ORDER CANCEL -->
+                    <div class="order__cancel">
+                        <img src="./Images/close.svg" alt="">
+                    </div>
+
+                    <!-- ORDER IMAGE -->
+                    <div class="order__image">
+                        <img src="./Images/coffee.png" alt="">
+                    </div>
+
+                    <!-- ORDER NAME -->
+                    <div class="order__name">
+                        Koffie
+                    </div>
+
+                    <!-- ORDER PRICE -->
+                    <div class="order__price">
+                        $ 2.90
+                    </div>
+
+                    <!-- ORDER QUANTITY -->
+                    <div class="order__quantity">
+                        <button class="order__button dec">
+                            <img src="./Images/minus.svg" alt="">
+                        </button>
+                        <div class="quantity">3</div>
+                        <button class="order__button inc">
+                            <img src="./Images/plus.svg" alt="">
+                        </button>
+
+                        <div class="bill">
+                            $ 2.90
+                        </div>
+                    </div>
+
+                    <!-- PLACE ORDER -->
+                    <button class="place__order">
+                        ADD TO ORDER
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- CARD BODY -->
+        <div class="card__body">
+            <!-- CARD IMAGE -->
+            <div class="card__image">
+                <img src="./Images/coffee.png" alt="">
+            </div>
+
+            <!-- CARD CONTENT -->
+            <div class="card__content">
+                <!-- V LINE -->
+                <div class="card__vLine"></div>
+
+                <!--  -->
+                <div class="card__info">
+                    <p class="card__text">Koffie</p>
+                    <div class="card__price">
+                        <p>
+                            $ 2.90
+                        </p>
+                        <img src="./Images/leaf.svg" alt="">
+                    </div>
+
+                    <span></span>
+                </div>
+            </div>
+
+            <!-- CARD BUTTON -->
+            <div>
+                <button class="card__button">
+                    <img src="./Images/plus.svg" alt="">
+                </button>
+            </div>
+            <div class="order">
+                <div class="order__body">
+                    <!-- ORDER CANCEL -->
+                    <div class="order__cancel">
+                        <img src="./Images/close.svg" alt="">
+                    </div>
+
+                    <!-- ORDER IMAGE -->
+                    <div class="order__image">
+                        <img src="./Images/coffee.png" alt="">
+                    </div>
+
+                    <!-- ORDER NAME -->
+                    <div class="order__name">
+                        Koffie
+                    </div>
+
+                    <!-- ORDER PRICE -->
+                    <div class="order__price">
+                        $ 2.90
+                    </div>
+
+                    <!-- ORDER QUANTITY -->
+                    <div class="order__quantity">
+                        <button class="order__button dec">
+                            <img src="./Images/minus.svg" alt="">
+                        </button>
+                        <div class="quantity">3</div>
+                        <button class="order__button inc">
+                            <img src="./Images/plus.svg" alt="">
+                        </button>
+
+                        <div class="bill">
+                            $ 2.90
+                        </div>
+                    </div>
+
+                    <!-- PLACE ORDER -->
+                    <button class="place__order">
+                        ADD TO ORDER
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="bieren" class="btn1__default">
+        <h4>Bieren</h4>
+        <!-- CARD BODY -->
+        <div class="card__body">
+            <!-- CARD IMAGE -->
+            <div class="card__image">
+                <img src="./Images/coffee.png" alt="">
+            </div>
+
+            <!-- CARD CONTENT -->
+            <div class="card__content">
+                <!-- V LINE -->
+                <div class="card__vLine"></div>
+
+                <!--  -->
+                <div class="card__info">
+                    <p class="card__text">Koffie</p>
+                    <div class="card__price">
+                        <p>
+                            $ 2.90
+                        </p>
+                        <img src="./Images/leaf.svg" alt="">
+                    </div>
+
+                    <span></span>
+                </div>
+            </div>
+
+            <!-- CARD BUTTON -->
+            <div>
+                <button class="card__button">
+                    <img src="./Images/plus.svg" alt="">
+                </button>
+            </div>
+            <div class="order">
+                <div class="order__body">
+                    <!-- ORDER CANCEL -->
+                    <div class="order__cancel">
+                        <img src="./Images/close.svg" alt="">
+                    </div>
+
+                    <!-- ORDER IMAGE -->
+                    <div class="order__image">
+                        <img src="./Images/coffee.png" alt="">
+                    </div>
+
+                    <!-- ORDER NAME -->
+                    <div class="order__name">
+                        Koffie
+                    </div>
+
+                    <!-- ORDER PRICE -->
+                    <div class="order__price">
+                        $ 2.90
+                    </div>
+
+                    <!-- ORDER QUANTITY -->
+                    <div class="order__quantity">
+                        <button class="order__button dec">
+                            <img src="./Images/minus.svg" alt="">
+                        </button>
+                        <div class="quantity">3</div>
+                        <button class="order__button inc">
+                            <img src="./Images/plus.svg" alt="">
+                        </button>
+
+                        <div class="bill">
+                            $ 2.90
+                        </div>
+                    </div>
+
+                    <!-- PLACE ORDER -->
+                    <button class="place__order">
+                        ADD TO ORDER
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- CARD BODY -->
+        <div class="card__body">
+            <!-- CARD IMAGE -->
+            <div class="card__image">
+                <img src="./Images/coffee.png" alt="">
+            </div>
+
+            <!-- CARD CONTENT -->
+            <div class="card__content">
+                <!-- V LINE -->
+                <div class="card__vLine"></div>
+
+                <!--  -->
+                <div class="card__info">
+                    <p class="card__text">Koffie</p>
+                    <div class="card__price">
+                        <p>
+                            $ 2.90
+                        </p>
+                        <img src="./Images/leaf.svg" alt="">
+                    </div>
+
+                    <span></span>
+                </div>
+            </div>
+
+            <!-- CARD BUTTON -->
+            <div>
+                <button class="card__button">
+                    <img src="./Images/plus.svg" alt="">
+                </button>
+            </div>
+            <div class="order">
+                <div class="order__body">
+                    <!-- ORDER CANCEL -->
+                    <div class="order__cancel">
+                        <img src="./Images/close.svg" alt="">
+                    </div>
+
+                    <!-- ORDER IMAGE -->
+                    <div class="order__image">
+                        <img src="./Images/coffee.png" alt="">
+                    </div>
+
+                    <!-- ORDER NAME -->
+                    <div class="order__name">
+                        Koffie
+                    </div>
+
+                    <!-- ORDER PRICE -->
+                    <div class="order__price">
+                        $ 2.90
+                    </div>
+
+                    <!-- ORDER QUANTITY -->
+                    <div class="order__quantity">
+                        <button class="order__button dec">
+                            <img src="./Images/minus.svg" alt="">
+                        </button>
+                        <div class="quantity">3</div>
+                        <button class="order__button inc">
+                            <img src="./Images/plus.svg" alt="">
+                        </button>
+
+                        <div class="bill">
+                            $ 2.90
+                        </div>
+                    </div>
+
+                    <!-- PLACE ORDER -->
+                    <button class="place__order">
+                        ADD TO ORDER
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- CARD BODY -->
+        <div class="card__body">
+            <!-- CARD IMAGE -->
+            <div class="card__image">
+                <img src="./Images/coffee.png" alt="">
+            </div>
+
+            <!-- CARD CONTENT -->
+            <div class="card__content">
+                <!-- V LINE -->
+                <div class="card__vLine"></div>
+
+                <!--  -->
+                <div class="card__info">
+                    <p class="card__text">Koffie</p>
+                    <div class="card__price">
+                        <p>
+                            $ 2.90
+                        </p>
+                        <img src="./Images/leaf.svg" alt="">
+                    </div>
+
+                    <span></span>
+                </div>
+            </div>
+
+            <!-- CARD BUTTON -->
+            <div>
+                <button class="card__button">
+                    <img src="./Images/plus.svg" alt="">
+                </button>
+            </div>
+            <div class="order">
+                <div class="order__body">
+                    <!-- ORDER CANCEL -->
+                    <div class="order__cancel">
+                        <img src="./Images/close.svg" alt="">
+                    </div>
+
+                    <!-- ORDER IMAGE -->
+                    <div class="order__image">
+                        <img src="./Images/coffee.png" alt="">
+                    </div>
+
+                    <!-- ORDER NAME -->
+                    <div class="order__name">
+                        Koffie
+                    </div>
+
+                    <!-- ORDER PRICE -->
+                    <div class="order__price">
+                        $ 2.90
+                    </div>
+
+                    <!-- ORDER QUANTITY -->
+                    <div class="order__quantity">
+                        <button class="order__button dec">
+                            <img src="./Images/minus.svg" alt="">
+                        </button>
+                        <div class="quantity">3</div>
+                        <button class="order__button inc">
+                            <img src="./Images/plus.svg" alt="">
+                        </button>
+
+                        <div class="bill">
+                            $ 2.90
+                        </div>
+                    </div>
+
+                    <!-- PLACE ORDER -->
+                    <button class="place__order">
+                        ADD TO ORDER
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="whiteWijenPerFles" class="btn1__default">
+        <h4>White Wijen Per Fles</h4>
+        <!-- CARD BODY -->
+        <div class="card__body">
+            <!-- CARD IMAGE -->
+            <div class="card__image">
+                <img src="./Images/coffee.png" alt="">
+            </div>
+
+            <!-- CARD CONTENT -->
+            <div class="card__content">
+                <!-- V LINE -->
+                <div class="card__vLine"></div>
+
+                <!--  -->
+                <div class="card__info">
+                    <p class="card__text">Koffie</p>
+                    <div class="card__price">
+                        <p>
+                            $ 2.90
+                        </p>
+                        <img src="./Images/leaf.svg" alt="">
+                    </div>
+
+                    <span></span>
+                </div>
+            </div>
+
+            <!-- CARD BUTTON -->
+            <div>
+                <button class="card__button">
+                    <img src="./Images/plus.svg" alt="">
+                </button>
+            </div>
+            <div class="order">
+                <div class="order__body">
+                    <!-- ORDER CANCEL -->
+                    <div class="order__cancel">
+                        <img src="./Images/close.svg" alt="">
+                    </div>
+
+                    <!-- ORDER IMAGE -->
+                    <div class="order__image">
+                        <img src="./Images/coffee.png" alt="">
+                    </div>
+
+                    <!-- ORDER NAME -->
+                    <div class="order__name">
+                        Koffie
+                    </div>
+
+                    <!-- ORDER PRICE -->
+                    <div class="order__price">
+                        $ 2.90
+                    </div>
+
+                    <!-- ORDER QUANTITY -->
+                    <div class="order__quantity">
+                        <button class="order__button dec">
+                            <img src="./Images/minus.svg" alt="">
+                        </button>
+                        <div class="quantity">3</div>
+                        <button class="order__button inc">
+                            <img src="./Images/plus.svg" alt="">
+                        </button>
+
+                        <div class="bill">
+                            $ 2.90
+                        </div>
+                    </div>
+
+                    <!-- PLACE ORDER -->
+                    <button class="place__order">
+                        ADD TO ORDER
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- CARD BODY -->
+        <div class="card__body">
+            <!-- CARD IMAGE -->
+            <div class="card__image">
+                <img src="./Images/coffee.png" alt="">
+            </div>
+
+            <!-- CARD CONTENT -->
+            <div class="card__content">
+                <!-- V LINE -->
+                <div class="card__vLine"></div>
+
+                <!--  -->
+                <div class="card__info">
+                    <p class="card__text">Koffie</p>
+                    <div class="card__price">
+                        <p>
+                            $ 2.90
+                        </p>
+                        <img src="./Images/leaf.svg" alt="">
+                    </div>
+
+                    <span></span>
+                </div>
+            </div>
+
+            <!-- CARD BUTTON -->
+            <div>
+                <button class="card__button">
+                    <img src="./Images/plus.svg" alt="">
+                </button>
+            </div>
+            <div class="order">
+                <div class="order__body">
+                    <!-- ORDER CANCEL -->
+                    <div class="order__cancel">
+                        <img src="./Images/close.svg" alt="">
+                    </div>
+
+                    <!-- ORDER IMAGE -->
+                    <div class="order__image">
+                        <img src="./Images/coffee.png" alt="">
+                    </div>
+
+                    <!-- ORDER NAME -->
+                    <div class="order__name">
+                        Koffie
+                    </div>
+
+                    <!-- ORDER PRICE -->
+                    <div class="order__price">
+                        $ 2.90
+                    </div>
+
+                    <!-- ORDER QUANTITY -->
+                    <div class="order__quantity">
+                        <button class="order__button dec">
+                            <img src="./Images/minus.svg" alt="">
+                        </button>
+                        <div class="quantity">3</div>
+                        <button class="order__button inc">
+                            <img src="./Images/plus.svg" alt="">
+                        </button>
+
+                        <div class="bill">
+                            $ 2.90
+                        </div>
+                    </div>
+
+                    <!-- PLACE ORDER -->
+                    <button class="place__order">
+                        ADD TO ORDER
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- CARD BODY -->
+        <div class="card__body">
+            <!-- CARD IMAGE -->
+            <div class="card__image">
+                <img src="./Images/coffee.png" alt="">
+            </div>
+
+            <!-- CARD CONTENT -->
+            <div class="card__content">
+                <!-- V LINE -->
+                <div class="card__vLine"></div>
+
+                <!--  -->
+                <div class="card__info">
+                    <p class="card__text">Koffie</p>
+                    <div class="card__price">
+                        <p>
+                            $ 2.90
+                        </p>
+                        <img src="./Images/leaf.svg" alt="">
+                    </div>
+
+                    <span></span>
+                </div>
+            </div>
+
+            <!-- CARD BUTTON -->
+            <div>
+                <button class="card__button">
+                    <img src="./Images/plus.svg" alt="">
+                </button>
+            </div>
+            <div class="order">
+                <div class="order__body">
+                    <!-- ORDER CANCEL -->
+                    <div class="order__cancel">
+                        <img src="./Images/close.svg" alt="">
+                    </div>
+
+                    <!-- ORDER IMAGE -->
+                    <div class="order__image">
+                        <img src="./Images/coffee.png" alt="">
+                    </div>
+
+                    <!-- ORDER NAME -->
+                    <div class="order__name">
+                        Koffie
+                    </div>
+
+                    <!-- ORDER PRICE -->
+                    <div class="order__price">
+                        $ 2.90
+                    </div>
+
+                    <!-- ORDER QUANTITY -->
+                    <div class="order__quantity">
+                        <button class="order__button dec">
+                            <img src="./Images/minus.svg" alt="">
+                        </button>
+                        <div class="quantity">3</div>
+                        <button class="order__button inc">
+                            <img src="./Images/plus.svg" alt="">
+                        </button>
+
+                        <div class="bill">
+                            $ 2.90
+                        </div>
+                    </div>
+
+                    <!-- PLACE ORDER -->
+                    <button class="place__order">
+                        ADD TO ORDER
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- CARD BODY -->
+        <div class="card__body">
+            <!-- CARD IMAGE -->
+            <div class="card__image">
+                <img src="./Images/coffee.png" alt="">
+            </div>
+
+            <!-- CARD CONTENT -->
+            <div class="card__content">
+                <!-- V LINE -->
+                <div class="card__vLine"></div>
+
+                <!--  -->
+                <div class="card__info">
+                    <p class="card__text">Koffie</p>
+                    <div class="card__price">
+                        <p>
+                            $ 2.90
+                        </p>
+                        <img src="./Images/leaf.svg" alt="">
+                    </div>
+
+                    <span></span>
+                </div>
+            </div>
+
+            <!-- CARD BUTTON -->
+            <div>
+                <button class="card__button">
+                    <img src="./Images/plus.svg" alt="">
+                </button>
+            </div>
+            <div class="order">
+                <div class="order__body">
+                    <!-- ORDER CANCEL -->
+                    <div class="order__cancel">
+                        <img src="./Images/close.svg" alt="">
+                    </div>
+
+                    <!-- ORDER IMAGE -->
+                    <div class="order__image">
+                        <img src="./Images/coffee.png" alt="">
+                    </div>
+
+                    <!-- ORDER NAME -->
+                    <div class="order__name">
+                        Koffie
+                    </div>
+
+                    <!-- ORDER PRICE -->
+                    <div class="order__price">
+                        $ 2.90
+                    </div>
+
+                    <!-- ORDER QUANTITY -->
+                    <div class="order__quantity">
+                        <button class="order__button dec">
+                            <img src="./Images/minus.svg" alt="">
+                        </button>
+                        <div class="quantity">3</div>
+                        <button class="order__button inc">
+                            <img src="./Images/plus.svg" alt="">
+                        </button>
+
+                        <div class="bill">
+                            $ 2.90
+                        </div>
+                    </div>
+
+                    <!-- PLACE ORDER -->
+                    <button class="place__order">
+                        ADD TO ORDER
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- CARD BODY -->
+        <div class="card__body">
+            <!-- CARD IMAGE -->
+            <div class="card__image">
+                <img src="./Images/coffee.png" alt="">
+            </div>
+
+            <!-- CARD CONTENT -->
+            <div class="card__content">
+                <!-- V LINE -->
+                <div class="card__vLine"></div>
+
+                <!--  -->
+                <div class="card__info">
+                    <p class="card__text">Koffie</p>
+                    <div class="card__price">
+                        <p>
+                            $ 2.90
+                        </p>
+                        <img src="./Images/leaf.svg" alt="">
+                    </div>
+
+                    <span></span>
+                </div>
+            </div>
+
+            <!-- CARD BUTTON -->
+            <div>
+                <button class="card__button">
+                    <img src="./Images/plus.svg" alt="">
+                </button>
+            </div>
+            <div class="order">
+                <div class="order__body">
+                    <!-- ORDER CANCEL -->
+                    <div class="order__cancel">
+                        <img src="./Images/close.svg" alt="">
+                    </div>
+
+                    <!-- ORDER IMAGE -->
+                    <div class="order__image">
+                        <img src="./Images/coffee.png" alt="">
+                    </div>
+
+                    <!-- ORDER NAME -->
+                    <div class="order__name">
+                        Koffie
+                    </div>
+
+                    <!-- ORDER PRICE -->
+                    <div class="order__price">
+                        $ 2.90
+                    </div>
+
+                    <!-- ORDER QUANTITY -->
+                    <div class="order__quantity">
+                        <button class="order__button dec">
+                            <img src="./Images/minus.svg" alt="">
+                        </button>
+                        <div class="quantity">3</div>
+                        <button class="order__button inc">
+                            <img src="./Images/plus.svg" alt="">
+                        </button>
+
+                        <div class="bill">
+                            $ 2.90
+                        </div>
+                    </div>
+
+                    <!-- PLACE ORDER -->
+                    <button class="place__order">
+                        ADD TO ORDER
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- CARD BODY -->
+        <div class="card__body">
+            <!-- CARD IMAGE -->
+            <div class="card__image">
+                <img src="./Images/coffee.png" alt="">
+            </div>
+
+            <!-- CARD CONTENT -->
+            <div class="card__content">
+                <!-- V LINE -->
+                <div class="card__vLine"></div>
+
+                <!--  -->
+                <div class="card__info">
+                    <p class="card__text">Koffie</p>
+                    <div class="card__price">
+                        <p>
+                            $ 2.90
+                        </p>
+                        <img src="./Images/leaf.svg" alt="">
+                    </div>
+
+                    <span></span>
+                </div>
+            </div>
+
+            <!-- CARD BUTTON -->
+            <div>
+                <button class="card__button">
+                    <img src="./Images/plus.svg" alt="">
+                </button>
+            </div>
+            <div class="order">
+                <div class="order__body">
+                    <!-- ORDER CANCEL -->
+                    <div class="order__cancel">
+                        <img src="./Images/close.svg" alt="">
+                    </div>
+
+                    <!-- ORDER IMAGE -->
+                    <div class="order__image">
+                        <img src="./Images/coffee.png" alt="">
+                    </div>
+
+                    <!-- ORDER NAME -->
+                    <div class="order__name">
+                        Koffie
+                    </div>
+
+                    <!-- ORDER PRICE -->
+                    <div class="order__price">
+                        $ 2.90
+                    </div>
+
+                    <!-- ORDER QUANTITY -->
+                    <div class="order__quantity">
+                        <button class="order__button dec">
+                            <img src="./Images/minus.svg" alt="">
+                        </button>
+                        <div class="quantity">3</div>
+                        <button class="order__button inc">
+                            <img src="./Images/plus.svg" alt="">
+                        </button>
+
+                        <div class="bill">
+                            $ 2.90
+                        </div>
+                    </div>
+
+                    <!-- PLACE ORDER -->
+                    <button class="place__order">
+                        ADD TO ORDER
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MENU -->
+    <!-- NAME THE ID SAME AS THE HREF -->
+    <div id="menuDranken" class="btn2__default">
+        <h4>Menudranken</h4>
+        <!-- CARD BODY -->
+        <div class="card__body">
+            <!-- CARD IMAGE -->
+            <div class="card__image">
+                <img src="./Images/coffee.png" alt="">
+            </div>
+
+            <!-- CARD CONTENT -->
+            <div class="card__content">
+                <!-- V LINE -->
+                <div class="card__vLine"></div>
+
+                <!--  -->
+                <div class="card__info">
+                    <p class="card__text">Drink</p>
+                    <div class="card__price">
+                        <p>
+                            $ 2.90
+                        </p>
+                        <img src="./Images/leaf.svg" alt="">
+                    </div>
+
+                    <span></span>
+                </div>
+            </div>
+
+            <!-- CARD BUTTON -->
+            <div>
+                <button class="card__button">
+                    <img src="./Images/plus.svg" alt="">
+                </button>
+            </div>
+            <div class="order">
+                <div class="order__body">
+                    <!-- ORDER CANCEL -->
+                    <div class="order__cancel">
+                        <img src="./Images/close.svg" alt="">
+                    </div>
+
+                    <!-- ORDER IMAGE -->
+                    <div class="order__image">
+                        <img src="./Images/coffee.png" alt="">
+                    </div>
+
+                    <!-- ORDER NAME -->
+                    <div class="order__name">
+                        Koffie
+                    </div>
+
+                    <!-- ORDER PRICE -->
+                    <div class="order__price">
+                        $ 2.90
+                    </div>
+
+                    <!-- ORDER QUANTITY -->
+                    <div class="order__quantity">
+                        <button class="order__button dec">
+                            <img src="./Images/minus.svg" alt="">
+                        </button>
+                        <div class="quantity">3</div>
+                        <button class="order__button inc">
+                            <img src="./Images/plus.svg" alt="">
+                        </button>
+
+                        <div class="bill">
+                            $ 2.90
+                        </div>
+                    </div>
+
+                    <!-- PLACE ORDER -->
+                    <button class="place__order">
+                        ADD TO ORDER
+                    </button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="menu0" class="btn2__default">
+        <h4>MENU 0</h4>
+        <!-- CARD BODY -->
+        <div class="card__body">
+            <!-- CARD IMAGE -->
+            <div class="card__image">
+                <img src="./Images/coffee.png" alt="">
+            </div>
+
+            <!-- CARD CONTENT -->
+            <div class="card__content">
+                <!-- V LINE -->
+                <div class="card__vLine"></div>
+
+                <!--  -->
+                <div class="card__info">
+                    <p class="card__text">Koffie</p>
+                    <div class="card__price">
+                        <p>
+                            $ 2.90
+                        </p>
+                        <img src="./Images/leaf.svg" alt="">
+                    </div>
+
+                    <span></span>
+                </div>
+            </div>
+
+            <!-- CARD BUTTON -->
+            <div>
+                <button class="card__button">
+                    <img src="./Images/plus.svg" alt="">
+                </button>
+            </div>
+            <div class="order">
+                <div class="order__body">
+                    <!-- ORDER CANCEL -->
+                    <div class="order__cancel">
+                        <img src="./Images/close.svg" alt="">
+                    </div>
+
+                    <!-- ORDER IMAGE -->
+                    <div class="order__image">
+                        <img src="./Images/coffee.png" alt="">
+                    </div>
+
+                    <!-- ORDER NAME -->
+                    <div class="order__name">
+                        Koffie
+                    </div>
+
+                    <!-- ORDER PRICE -->
+                    <div class="order__price">
+                        $ 2.90
+                    </div>
+
+                    <!-- ORDER QUANTITY -->
+                    <div class="order__quantity">
+                        <button class="order__button dec">
+                            <img src="./Images/minus.svg" alt="">
+                        </button>
+                        <div class="quantity">3</div>
+                        <button class="order__button inc">
+                            <img src="./Images/plus.svg" alt="">
+                        </button>
+
+                        <div class="bill">
+                            $ 2.90
+                        </div>
+                    </div>
+
+                    <!-- PLACE ORDER -->
+                    <button class="place__order">
+                        ADD TO ORDER
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- CARD BODY -->
+        <div class="card__body">
+            <!-- CARD IMAGE -->
+            <div class="card__image">
+                <img src="./Images/coffee.png" alt="">
+            </div>
+
+            <!-- CARD CONTENT -->
+            <div class="card__content">
+                <!-- V LINE -->
+                <div class="card__vLine"></div>
+
+                <!--  -->
+                <div class="card__info">
+                    <p class="card__text">Koffie</p>
+                    <div class="card__price">
+                        <p>
+                            $ 2.90
+                        </p>
+                        <img src="./Images/leaf.svg" alt="">
+                    </div>
+
+                    <span></span>
+                </div>
+            </div>
+
+            <!-- CARD BUTTON -->
+            <div>
+                <button class="card__button">
+                    <img src="./Images/plus.svg" alt="">
+                </button>
+            </div>
+            <div class="order">
+                <div class="order__body">
+                    <!-- ORDER CANCEL -->
+                    <div class="order__cancel">
+                        <img src="./Images/close.svg" alt="">
+                    </div>
+
+                    <!-- ORDER IMAGE -->
+                    <div class="order__image">
+                        <img src="./Images/coffee.png" alt="">
+                    </div>
+
+                    <!-- ORDER NAME -->
+                    <div class="order__name">
+                        Koffie
+                    </div>
+
+                    <!-- ORDER PRICE -->
+                    <div class="order__price">
+                        $ 2.90
+                    </div>
+
+                    <!-- ORDER QUANTITY -->
+                    <div class="order__quantity">
+                        <button class="order__button dec">
+                            <img src="./Images/minus.svg" alt="">
+                        </button>
+                        <div class="quantity">3</div>
+                        <button class="order__button inc">
+                            <img src="./Images/plus.svg" alt="">
+                        </button>
+
+                        <div class="bill">
+                            $ 2.90
+                        </div>
+                    </div>
+
+                    <!-- PLACE ORDER -->
+                    <button class="place__order">
+                        ADD TO ORDER
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- CARD BODY -->
+        <div class="card__body">
+            <!-- CARD IMAGE -->
+            <div class="card__image">
+                <img src="./Images/coffee.png" alt="">
+            </div>
+
+            <!-- CARD CONTENT -->
+            <div class="card__content">
+                <!-- V LINE -->
+                <div class="card__vLine"></div>
+
+                <!--  -->
+                <div class="card__info">
+                    <p class="card__text">Koffie</p>
+                    <div class="card__price">
+                        <p>
+                            $ 2.90
+                        </p>
+                        <img src="./Images/leaf.svg" alt="">
+                    </div>
+
+                    <span></span>
+                </div>
+            </div>
+
+            <!-- CARD BUTTON -->
+            <div>
+                <button class="card__button">
+                    <img src="./Images/plus.svg" alt="">
+                </button>
+            </div>
+            <div class="order">
+                <div class="order__body">
+                    <!-- ORDER CANCEL -->
+                    <div class="order__cancel">
+                        <img src="./Images/close.svg" alt="">
+                    </div>
+
+                    <!-- ORDER IMAGE -->
+                    <div class="order__image">
+                        <img src="./Images/coffee.png" alt="">
+                    </div>
+
+                    <!-- ORDER NAME -->
+                    <div class="order__name">
+                        Koffie
+                    </div>
+
+                    <!-- ORDER PRICE -->
+                    <div class="order__price">
+                        $ 2.90
+                    </div>
+
+                    <!-- ORDER QUANTITY -->
+                    <div class="order__quantity">
+                        <button class="order__button dec">
+                            <img src="./Images/minus.svg" alt="">
+                        </button>
+                        <div class="quantity">3</div>
+                        <button class="order__button inc">
+                            <img src="./Images/plus.svg" alt="">
+                        </button>
+
+                        <div class="bill">
+                            $ 2.90
+                        </div>
+                    </div>
+
+                    <!-- PLACE ORDER -->
+                    <button class="place__order">
+                        ADD TO ORDER
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="menu1" class="btn2__default">
+        <h4>MENU 1</h4>
+        <!-- CARD BODY -->
+        <div class="card__body">
+            <!-- CARD IMAGE -->
+            <div class="card__image">
+                <img src="./Images/coffee.png" alt="">
+            </div>
+
+            <!-- CARD CONTENT -->
+            <div class="card__content">
+                <!-- V LINE -->
+                <div class="card__vLine"></div>
+
+                <!--  -->
+                <div class="card__info">
+                    <p class="card__text">Koffie</p>
+                    <div class="card__price">
+                        <p>
+                            $ 2.90
+                        </p>
+                        <img src="./Images/leaf.svg" alt="">
+                    </div>
+
+                    <span></span>
+                </div>
+            </div>
+
+            <!-- CARD BUTTON -->
+            <div>
+                <button class="card__button">
+                    <img src="./Images/plus.svg" alt="">
+                </button>
+            </div>
+            <div class="order">
+                <div class="order__body">
+                    <!-- ORDER CANCEL -->
+                    <div class="order__cancel">
+                        <img src="./Images/close.svg" alt="">
+                    </div>
+
+                    <!-- ORDER IMAGE -->
+                    <div class="order__image">
+                        <img src="./Images/coffee.png" alt="">
+                    </div>
+
+                    <!-- ORDER NAME -->
+                    <div class="order__name">
+                        Koffie
+                    </div>
+
+                    <!-- ORDER PRICE -->
+                    <div class="order__price">
+                        $ 2.90
+                    </div>
+
+                    <!-- ORDER QUANTITY -->
+                    <div class="order__quantity">
+                        <button class="order__button dec">
+                            <img src="./Images/minus.svg" alt="">
+                        </button>
+                        <div class="quantity">3</div>
+                        <button class="order__button inc">
+                            <img src="./Images/plus.svg" alt="">
+                        </button>
+
+                        <div class="bill">
+                            $ 2.90
+                        </div>
+                    </div>
+
+                    <!-- PLACE ORDER -->
+                    <button class="place__order">
+                        ADD TO ORDER
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- CARD BODY -->
+        <div class="card__body">
+            <!-- CARD IMAGE -->
+            <div class="card__image">
+                <img src="./Images/coffee.png" alt="">
+            </div>
+
+            <!-- CARD CONTENT -->
+            <div class="card__content">
+                <!-- V LINE -->
+                <div class="card__vLine"></div>
+
+                <!--  -->
+                <div class="card__info">
+                    <p class="card__text">Koffie</p>
+                    <div class="card__price">
+                        <p>
+                            $ 2.90
+                        </p>
+                        <img src="./Images/leaf.svg" alt="">
+                    </div>
+
+                    <span></span>
+                </div>
+            </div>
+
+            <!-- CARD BUTTON -->
+            <div>
+                <button class="card__button">
+                    <img src="./Images/plus.svg" alt="">
+                </button>
+            </div>
+            <div class="order">
+                <div class="order__body">
+                    <!-- ORDER CANCEL -->
+                    <div class="order__cancel">
+                        <img src="./Images/close.svg" alt="">
+                    </div>
+
+                    <!-- ORDER IMAGE -->
+                    <div class="order__image">
+                        <img src="./Images/coffee.png" alt="">
+                    </div>
+
+                    <!-- ORDER NAME -->
+                    <div class="order__name">
+                        Koffie
+                    </div>
+
+                    <!-- ORDER PRICE -->
+                    <div class="order__price">
+                        $ 2.90
+                    </div>
+
+                    <!-- ORDER QUANTITY -->
+                    <div class="order__quantity">
+                        <button class="order__button dec">
+                            <img src="./Images/minus.svg" alt="">
+                        </button>
+                        <div class="quantity">3</div>
+                        <button class="order__button inc">
+                            <img src="./Images/plus.svg" alt="">
+                        </button>
+
+                        <div class="bill">
+                            $ 2.90
+                        </div>
+                    </div>
+
+                    <!-- PLACE ORDER -->
+                    <button class="place__order">
+                        ADD TO ORDER
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- CARD BODY -->
+        <div class="card__body">
+            <!-- CARD IMAGE -->
+            <div class="card__image">
+                <img src="./Images/coffee.png" alt="">
+            </div>
+
+            <!-- CARD CONTENT -->
+            <div class="card__content">
+                <!-- V LINE -->
+                <div class="card__vLine"></div>
+
+                <!--  -->
+                <div class="card__info">
+                    <p class="card__text">Koffie</p>
+                    <div class="card__price">
+                        <p>
+                            $ 2.90
+                        </p>
+                        <img src="./Images/leaf.svg" alt="">
+                    </div>
+
+                    <span></span>
+                </div>
+            </div>
+
+            <!-- CARD BUTTON -->
+            <div>
+                <button class="card__button">
+                    <img src="./Images/plus.svg" alt="">
+                </button>
+            </div>
+            <div class="order">
+                <div class="order__body">
+                    <!-- ORDER CANCEL -->
+                    <div class="order__cancel">
+                        <img src="./Images/close.svg" alt="">
+                    </div>
+
+                    <!-- ORDER IMAGE -->
+                    <div class="order__image">
+                        <img src="./Images/coffee.png" alt="">
+                    </div>
+
+                    <!-- ORDER NAME -->
+                    <div class="order__name">
+                        Koffie
+                    </div>
+
+                    <!-- ORDER PRICE -->
+                    <div class="order__price">
+                        $ 2.90
+                    </div>
+
+                    <!-- ORDER QUANTITY -->
+                    <div class="order__quantity">
+                        <button class="order__button dec">
+                            <img src="./Images/minus.svg" alt="">
+                        </button>
+                        <div class="quantity">3</div>
+                        <button class="order__button inc">
+                            <img src="./Images/plus.svg" alt="">
+                        </button>
+
+                        <div class="bill">
+                            $ 2.90
+                        </div>
+                    </div>
+
+                    <!-- PLACE ORDER -->
+                    <button class="place__order">
+                        ADD TO ORDER
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="menu2" class="btn2__default">
+        <h4>MENU 2</h4>
+        <!-- CARD BODY -->
+        <div class="card__body">
+            <!-- CARD IMAGE -->
+            <div class="card__image">
+                <img src="./Images/coffee.png" alt="">
+            </div>
+
+            <!-- CARD CONTENT -->
+            <div class="card__content">
+                <!-- V LINE -->
+                <div class="card__vLine"></div>
+
+                <!--  -->
+                <div class="card__info">
+                    <p class="card__text">Koffie</p>
+                    <div class="card__price">
+                        <p>
+                            $ 2.90
+                        </p>
+                        <img src="./Images/leaf.svg" alt="">
+                    </div>
+
+                    <span></span>
+                </div>
+            </div>
+
+            <!-- CARD BUTTON -->
+            <div>
+                <button class="card__button">
+                    <img src="./Images/plus.svg" alt="">
+                </button>
+            </div>
+            <div class="order">
+                <div class="order__body">
+                    <!-- ORDER CANCEL -->
+                    <div class="order__cancel">
+                        <img src="./Images/close.svg" alt="">
+                    </div>
+
+                    <!-- ORDER IMAGE -->
+                    <div class="order__image">
+                        <img src="./Images/coffee.png" alt="">
+                    </div>
+
+                    <!-- ORDER NAME -->
+                    <div class="order__name">
+                        Koffie
+                    </div>
+
+                    <!-- ORDER PRICE -->
+                    <div class="order__price">
+                        $ 2.90
+                    </div>
+
+                    <!-- ORDER QUANTITY -->
+                    <div class="order__quantity">
+                        <button class="order__button dec">
+                            <img src="./Images/minus.svg" alt="">
+                        </button>
+                        <div class="quantity">3</div>
+                        <button class="order__button inc">
+                            <img src="./Images/plus.svg" alt="">
+                        </button>
+
+                        <div class="bill">
+                            $ 2.90
+                        </div>
+                    </div>
+
+                    <!-- PLACE ORDER -->
+                    <button class="place__order">
+                        ADD TO ORDER
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- CARD BODY -->
+        <div class="card__body">
+            <!-- CARD IMAGE -->
+            <div class="card__image">
+                <img src="./Images/coffee.png" alt="">
+            </div>
+
+            <!-- CARD CONTENT -->
+            <div class="card__content">
+                <!-- V LINE -->
+                <div class="card__vLine"></div>
+
+                <!--  -->
+                <div class="card__info">
+                    <p class="card__text">Koffie</p>
+                    <div class="card__price">
+                        <p>
+                            $ 2.90
+                        </p>
+                        <img src="./Images/leaf.svg" alt="">
+                    </div>
+
+                    <span></span>
+                </div>
+            </div>
+
+            <!-- CARD BUTTON -->
+            <div>
+                <button class="card__button">
+                    <img src="./Images/plus.svg" alt="">
+                </button>
+            </div>
+            <div class="order">
+                <div class="order__body">
+                    <!-- ORDER CANCEL -->
+                    <div class="order__cancel">
+                        <img src="./Images/close.svg" alt="">
+                    </div>
+
+                    <!-- ORDER IMAGE -->
+                    <div class="order__image">
+                        <img src="./Images/coffee.png" alt="">
+                    </div>
+
+                    <!-- ORDER NAME -->
+                    <div class="order__name">
+                        Koffie
+                    </div>
+
+                    <!-- ORDER PRICE -->
+                    <div class="order__price">
+                        $ 2.90
+                    </div>
+
+                    <!-- ORDER QUANTITY -->
+                    <div class="order__quantity">
+                        <button class="order__button dec">
+                            <img src="./Images/minus.svg" alt="">
+                        </button>
+                        <div class="quantity">3</div>
+                        <button class="order__button inc">
+                            <img src="./Images/plus.svg" alt="">
+                        </button>
+
+                        <div class="bill">
+                            $ 2.90
+                        </div>
+                    </div>
+
+                    <!-- PLACE ORDER -->
+                    <button class="place__order">
+                        ADD TO ORDER
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- CARD BODY -->
+        <div class="card__body">
+            <!-- CARD IMAGE -->
+            <div class="card__image">
+                <img src="./Images/coffee.png" alt="">
+            </div>
+
+            <!-- CARD CONTENT -->
+            <div class="card__content">
+                <!-- V LINE -->
+                <div class="card__vLine"></div>
+
+                <!--  -->
+                <div class="card__info">
+                    <p class="card__text">Koffie</p>
+                    <div class="card__price">
+                        <p>
+                            $ 2.90
+                        </p>
+                        <img src="./Images/leaf.svg" alt="">
+                    </div>
+
+                    <span></span>
+                </div>
+            </div>
+
+            <!-- CARD BUTTON -->
+            <div>
+                <button class="card__button">
+                    <img src="./Images/plus.svg" alt="">
+                </button>
+            </div>
+            <div class="order">
+                <div class="order__body">
+                    <!-- ORDER CANCEL -->
+                    <div class="order__cancel">
+                        <img src="./Images/close.svg" alt="">
+                    </div>
+
+                    <!-- ORDER IMAGE -->
+                    <div class="order__image">
+                        <img src="./Images/coffee.png" alt="">
+                    </div>
+
+                    <!-- ORDER NAME -->
+                    <div class="order__name">
+                        Koffie
+                    </div>
+
+                    <!-- ORDER PRICE -->
+                    <div class="order__price">
+                        $ 2.90
+                    </div>
+
+                    <!-- ORDER QUANTITY -->
+                    <div class="order__quantity">
+                        <button class="order__button dec">
+                            <img src="./Images/minus.svg" alt="">
+                        </button>
+                        <div class="quantity">3</div>
+                        <button class="order__button inc">
+                            <img src="./Images/plus.svg" alt="">
+                        </button>
+
+                        <div class="bill">
+                            $ 2.90
+                        </div>
+                    </div>
+
+                    <!-- PLACE ORDER -->
+                    <button class="place__order">
+                        ADD TO ORDER
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- DESSERT -->
+    <!-- NAME THE ID SAME AS THE HREF -->
+    <div id="dessert" class="btn3__default">
+        <h4>Dessert</h4>
+        <!-- CARD BODY -->
+        <div class="card__body">
+            <!-- CARD IMAGE -->
+            <div class="card__image">
+                <img src="./Images/coffee.png" alt="">
+            </div>
+
+            <!-- CARD CONTENT -->
+            <div class="card__content">
+                <!-- V LINE -->
+                <div class="card__vLine"></div>
+
+                <!--  -->
+                <div class="card__info">
+                    <p class="card__text">Drink</p>
+                    <div class="card__price">
+                        <p>
+                            $ 2.90
+                        </p>
+                        <img src="./Images/leaf.svg" alt="">
+                    </div>
+
+                    <span></span>
+                </div>
+            </div>
+
+            <!-- CARD BUTTON -->
+            <div>
+                <button class="card__button">
+                    <img src="./Images/plus.svg" alt="">
+                </button>
+            </div>
+            <div class="order">
+                <div class="order__body">
+                    <!-- ORDER CANCEL -->
+                    <div class="order__cancel">
+                        <img src="./Images/close.svg" alt="">
+                    </div>
+
+                    <!-- ORDER IMAGE -->
+                    <div class="order__image">
+                        <img src="./Images/coffee.png" alt="">
+                    </div>
+
+                    <!-- ORDER NAME -->
+                    <div class="order__name">
+                        Koffie
+                    </div>
+
+                    <!-- ORDER PRICE -->
+                    <div class="order__price">
+                        $ 2.90
+                    </div>
+
+                    <!-- ORDER QUANTITY -->
+                    <div class="order__quantity">
+                        <button class="order__button dec">
+                            <img src="./Images/minus.svg" alt="">
+                        </button>
+                        <div class="quantity">3</div>
+                        <button class="order__button inc">
+                            <img src="./Images/plus.svg" alt="">
+                        </button>
+
+                        <div class="bill">
+                            $ 2.90
+                        </div>
+                    </div>
+
+                    <!-- PLACE ORDER -->
+                    <button class="place__order">
+                        ADD TO ORDER
+                    </button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="dessert1" class="btn3__default">
+        <h4>Dessert 1</h4>
+        <!-- CARD BODY -->
+        <div class="card__body">
+            <!-- CARD IMAGE -->
+            <div class="card__image">
+                <img src="./Images/coffee.png" alt="">
+            </div>
+
+            <!-- CARD CONTENT -->
+            <div class="card__content">
+                <!-- V LINE -->
+                <div class="card__vLine"></div>
+
+                <!--  -->
+                <div class="card__info">
+                    <p class="card__text">Koffie</p>
+                    <div class="card__price">
+                        <p>
+                            $ 2.90
+                        </p>
+                        <img src="./Images/leaf.svg" alt="">
+                    </div>
+
+                    <span></span>
+                </div>
+            </div>
+
+            <!-- CARD BUTTON -->
+            <div>
+                <button class="card__button">
+                    <img src="./Images/plus.svg" alt="">
+                </button>
+            </div>
+            <div class="order">
+                <div class="order__body">
+                    <!-- ORDER CANCEL -->
+                    <div class="order__cancel">
+                        <img src="./Images/close.svg" alt="">
+                    </div>
+
+                    <!-- ORDER IMAGE -->
+                    <div class="order__image">
+                        <img src="./Images/coffee.png" alt="">
+                    </div>
+
+                    <!-- ORDER NAME -->
+                    <div class="order__name">
+                        Koffie
+                    </div>
+
+                    <!-- ORDER PRICE -->
+                    <div class="order__price">
+                        $ 2.90
+                    </div>
+
+                    <!-- ORDER QUANTITY -->
+                    <div class="order__quantity">
+                        <button class="order__button dec">
+                            <img src="./Images/minus.svg" alt="">
+                        </button>
+                        <div class="quantity">3</div>
+                        <button class="order__button inc">
+                            <img src="./Images/plus.svg" alt="">
+                        </button>
+
+                        <div class="bill">
+                            $ 2.90
+                        </div>
+                    </div>
+
+                    <!-- PLACE ORDER -->
+                    <button class="place__order">
+                        ADD TO ORDER
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- CARD BODY -->
+        <div class="card__body">
+            <!-- CARD IMAGE -->
+            <div class="card__image">
+                <img src="./Images/coffee.png" alt="">
+            </div>
+
+            <!-- CARD CONTENT -->
+            <div class="card__content">
+                <!-- V LINE -->
+                <div class="card__vLine"></div>
+
+                <!--  -->
+                <div class="card__info">
+                    <p class="card__text">Koffie</p>
+                    <div class="card__price">
+                        <p>
+                            $ 2.90
+                        </p>
+                        <img src="./Images/leaf.svg" alt="">
+                    </div>
+
+                    <span></span>
+                </div>
+            </div>
+
+            <!-- CARD BUTTON -->
+            <div>
+                <button class="card__button">
+                    <img src="./Images/plus.svg" alt="">
+                </button>
+            </div>
+            <div class="order">
+                <div class="order__body">
+                    <!-- ORDER CANCEL -->
+                    <div class="order__cancel">
+                        <img src="./Images/close.svg" alt="">
+                    </div>
+
+                    <!-- ORDER IMAGE -->
+                    <div class="order__image">
+                        <img src="./Images/coffee.png" alt="">
+                    </div>
+
+                    <!-- ORDER NAME -->
+                    <div class="order__name">
+                        Koffie
+                    </div>
+
+                    <!-- ORDER PRICE -->
+                    <div class="order__price">
+                        $ 2.90
+                    </div>
+
+                    <!-- ORDER QUANTITY -->
+                    <div class="order__quantity">
+                        <button class="order__button dec">
+                            <img src="./Images/minus.svg" alt="">
+                        </button>
+                        <div class="quantity">3</div>
+                        <button class="order__button inc">
+                            <img src="./Images/plus.svg" alt="">
+                        </button>
+
+                        <div class="bill">
+                            $ 2.90
+                        </div>
+                    </div>
+
+                    <!-- PLACE ORDER -->
+                    <button class="place__order">
+                        ADD TO ORDER
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- CARD BODY -->
+        <div class="card__body">
+            <!-- CARD IMAGE -->
+            <div class="card__image">
+                <img src="./Images/coffee.png" alt="">
+            </div>
+
+            <!-- CARD CONTENT -->
+            <div class="card__content">
+                <!-- V LINE -->
+                <div class="card__vLine"></div>
+
+                <!--  -->
+                <div class="card__info">
+                    <p class="card__text">Koffie</p>
+                    <div class="card__price">
+                        <p>
+                            $ 2.90
+                        </p>
+                        <img src="./Images/leaf.svg" alt="">
+                    </div>
+
+                    <span></span>
+                </div>
+            </div>
+
+            <!-- CARD BUTTON -->
+            <div>
+                <button class="card__button">
+                    <img src="./Images/plus.svg" alt="">
+                </button>
+            </div>
+            <div class="order">
+                <div class="order__body">
+                    <!-- ORDER CANCEL -->
+                    <div class="order__cancel">
+                        <img src="./Images/close.svg" alt="">
+                    </div>
+
+                    <!-- ORDER IMAGE -->
+                    <div class="order__image">
+                        <img src="./Images/coffee.png" alt="">
+                    </div>
+
+                    <!-- ORDER NAME -->
+                    <div class="order__name">
+                        Koffie
+                    </div>
+
+                    <!-- ORDER PRICE -->
+                    <div class="order__price">
+                        $ 2.90
+                    </div>
+
+                    <!-- ORDER QUANTITY -->
+                    <div class="order__quantity">
+                        <button class="order__button dec">
+                            <img src="./Images/minus.svg" alt="">
+                        </button>
+                        <div class="quantity">3</div>
+                        <button class="order__button inc">
+                            <img src="./Images/plus.svg" alt="">
+                        </button>
+
+                        <div class="bill">
+                            $ 2.90
+                        </div>
+                    </div>
+
+                    <!-- PLACE ORDER -->
+                    <button class="place__order">
+                        ADD TO ORDER
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="dessert2" class="btn3__default">
+        <h4>Dessert 2</h4>
+        <!-- CARD BODY -->
+        <div class="card__body">
+            <!-- CARD IMAGE -->
+            <div class="card__image">
+                <img src="./Images/coffee.png" alt="">
+            </div>
+
+            <!-- CARD CONTENT -->
+            <div class="card__content">
+                <!-- V LINE -->
+                <div class="card__vLine"></div>
+
+                <!--  -->
+                <div class="card__info">
+                    <p class="card__text">Koffie</p>
+                    <div class="card__price">
+                        <p>
+                            $ 2.90
+                        </p>
+                        <img src="./Images/leaf.svg" alt="">
+                    </div>
+
+                    <span></span>
+                </div>
+            </div>
+
+            <!-- CARD BUTTON -->
+            <div>
+                <button class="card__button">
+                    <img src="./Images/plus.svg" alt="">
+                </button>
+            </div>
+            <div class="order">
+                <div class="order__body">
+                    <!-- ORDER CANCEL -->
+                    <div class="order__cancel">
+                        <img src="./Images/close.svg" alt="">
+                    </div>
+
+                    <!-- ORDER IMAGE -->
+                    <div class="order__image">
+                        <img src="./Images/coffee.png" alt="">
+                    </div>
+
+                    <!-- ORDER NAME -->
+                    <div class="order__name">
+                        Koffie
+                    </div>
+
+                    <!-- ORDER PRICE -->
+                    <div class="order__price">
+                        $ 2.90
+                    </div>
+
+                    <!-- ORDER QUANTITY -->
+                    <div class="order__quantity">
+                        <button class="order__button dec">
+                            <img src="./Images/minus.svg" alt="">
+                        </button>
+                        <div class="quantity">3</div>
+                        <button class="order__button inc">
+                            <img src="./Images/plus.svg" alt="">
+                        </button>
+
+                        <div class="bill">
+                            $ 2.90
+                        </div>
+                    </div>
+
+                    <!-- PLACE ORDER -->
+                    <button class="place__order">
+                        ADD TO ORDER
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- CARD BODY -->
+        <div class="card__body">
+            <!-- CARD IMAGE -->
+            <div class="card__image">
+                <img src="./Images/coffee.png" alt="">
+            </div>
+
+            <!-- CARD CONTENT -->
+            <div class="card__content">
+                <!-- V LINE -->
+                <div class="card__vLine"></div>
+
+                <!--  -->
+                <div class="card__info">
+                    <p class="card__text">Koffie</p>
+                    <div class="card__price">
+                        <p>
+                            $ 2.90
+                        </p>
+                        <img src="./Images/leaf.svg" alt="">
+                    </div>
+
+                    <span></span>
+                </div>
+            </div>
+
+            <!-- CARD BUTTON -->
+            <div>
+                <button class="card__button">
+                    <img src="./Images/plus.svg" alt="">
+                </button>
+            </div>
+            <div class="order">
+                <div class="order__body">
+                    <!-- ORDER CANCEL -->
+                    <div class="order__cancel">
+                        <img src="./Images/close.svg" alt="">
+                    </div>
+
+                    <!-- ORDER IMAGE -->
+                    <div class="order__image">
+                        <img src="./Images/coffee.png" alt="">
+                    </div>
+
+                    <!-- ORDER NAME -->
+                    <div class="order__name">
+                        Koffie
+                    </div>
+
+                    <!-- ORDER PRICE -->
+                    <div class="order__price">
+                        $ 2.90
+                    </div>
+
+                    <!-- ORDER QUANTITY -->
+                    <div class="order__quantity">
+                        <button class="order__button dec">
+                            <img src="./Images/minus.svg" alt="">
+                        </button>
+                        <div class="quantity">3</div>
+                        <button class="order__button inc">
+                            <img src="./Images/plus.svg" alt="">
+                        </button>
+
+                        <div class="bill">
+                            $ 2.90
+                        </div>
+                    </div>
+
+                    <!-- PLACE ORDER -->
+                    <button class="place__order">
+                        ADD TO ORDER
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- CARD BODY -->
+        <div class="card__body">
+            <!-- CARD IMAGE -->
+            <div class="card__image">
+                <img src="./Images/coffee.png" alt="">
+            </div>
+
+            <!-- CARD CONTENT -->
+            <div class="card__content">
+                <!-- V LINE -->
+                <div class="card__vLine"></div>
+
+                <!--  -->
+                <div class="card__info">
+                    <p class="card__text">Koffie</p>
+                    <div class="card__price">
+                        <p>
+                            $ 2.90
+                        </p>
+                        <img src="./Images/leaf.svg" alt="">
+                    </div>
+
+                    <span></span>
+                </div>
+            </div>
+
+            <!-- CARD BUTTON -->
+            <div>
+                <button class="card__button">
+                    <img src="./Images/plus.svg" alt="">
+                </button>
+            </div>
+            <div class="order">
+                <div class="order__body">
+                    <!-- ORDER CANCEL -->
+                    <div class="order__cancel">
+                        <img src="./Images/close.svg" alt="">
+                    </div>
+
+                    <!-- ORDER IMAGE -->
+                    <div class="order__image">
+                        <img src="./Images/coffee.png" alt="">
+                    </div>
+
+                    <!-- ORDER NAME -->
+                    <div class="order__name">
+                        Koffie
+                    </div>
+
+                    <!-- ORDER PRICE -->
+                    <div class="order__price">
+                        $ 2.90
+                    </div>
+
+                    <!-- ORDER QUANTITY -->
+                    <div class="order__quantity">
+                        <button class="order__button dec">
+                            <img src="./Images/minus.svg" alt="">
+                        </button>
+                        <div class="quantity">3</div>
+                        <button class="order__button inc">
+                            <img src="./Images/plus.svg" alt="">
+                        </button>
+
+                        <div class="bill">
+                            $ 2.90
+                        </div>
+                    </div>
+
+                    <!-- PLACE ORDER -->
+                    <button class="place__order">
+                        ADD TO ORDER
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="dessert3" class="btn3__default">
+        <h4>Dessert 3</h4>
+        <!-- CARD BODY -->
+        <div class="card__body">
+            <!-- CARD IMAGE -->
+            <div class="card__image">
+                <img src="./Images/coffee.png" alt="">
+            </div>
+
+            <!-- CARD CONTENT -->
+            <div class="card__content">
+                <!-- V LINE -->
+                <div class="card__vLine"></div>
+
+                <!--  -->
+                <div class="card__info">
+                    <p class="card__text">Koffie</p>
+                    <div class="card__price">
+                        <p>
+                            $ 2.90
+                        </p>
+                        <img src="./Images/leaf.svg" alt="">
+                    </div>
+
+                    <span></span>
+                </div>
+            </div>
+
+            <!-- CARD BUTTON -->
+            <div>
+                <button class="card__button">
+                    <img src="./Images/plus.svg" alt="">
+                </button>
+            </div>
+            <div class="order">
+                <div class="order__body">
+                    <!-- ORDER CANCEL -->
+                    <div class="order__cancel">
+                        <img src="./Images/close.svg" alt="">
+                    </div>
+
+                    <!-- ORDER IMAGE -->
+                    <div class="order__image">
+                        <img src="./Images/coffee.png" alt="">
+                    </div>
+
+                    <!-- ORDER NAME -->
+                    <div class="order__name">
+                        Koffie
+                    </div>
+
+                    <!-- ORDER PRICE -->
+                    <div class="order__price">
+                        $ 2.90
+                    </div>
+
+                    <!-- ORDER QUANTITY -->
+                    <div class="order__quantity">
+                        <button class="order__button dec">
+                            <img src="./Images/minus.svg" alt="">
+                        </button>
+                        <div class="quantity">3</div>
+                        <button class="order__button inc">
+                            <img src="./Images/plus.svg" alt="">
+                        </button>
+
+                        <div class="bill">
+                            $ 2.90
+                        </div>
+                    </div>
+
+                    <!-- PLACE ORDER -->
+                    <button class="place__order">
+                        ADD TO ORDER
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- CARD BODY -->
+        <div class="card__body">
+            <!-- CARD IMAGE -->
+            <div class="card__image">
+                <img src="./Images/coffee.png" alt="">
+            </div>
+
+            <!-- CARD CONTENT -->
+            <div class="card__content">
+                <!-- V LINE -->
+                <div class="card__vLine"></div>
+
+                <!--  -->
+                <div class="card__info">
+                    <p class="card__text">Koffie</p>
+                    <div class="card__price">
+                        <p>
+                            $ 2.90
+                        </p>
+                        <img src="./Images/leaf.svg" alt="">
+                    </div>
+
+                    <span></span>
+                </div>
+            </div>
+
+            <!-- CARD BUTTON -->
+            <div>
+                <button class="card__button">
+                    <img src="./Images/plus.svg" alt="">
+                </button>
+            </div>
+            <div class="order">
+                <div class="order__body">
+                    <!-- ORDER CANCEL -->
+                    <div class="order__cancel">
+                        <img src="./Images/close.svg" alt="">
+                    </div>
+
+                    <!-- ORDER IMAGE -->
+                    <div class="order__image">
+                        <img src="./Images/coffee.png" alt="">
+                    </div>
+
+                    <!-- ORDER NAME -->
+                    <div class="order__name">
+                        Koffie
+                    </div>
+
+                    <!-- ORDER PRICE -->
+                    <div class="order__price">
+                        $ 2.90
+                    </div>
+
+                    <!-- ORDER QUANTITY -->
+                    <div class="order__quantity">
+                        <button class="order__button dec">
+                            <img src="./Images/minus.svg" alt="">
+                        </button>
+                        <div class="quantity">3</div>
+                        <button class="order__button inc">
+                            <img src="./Images/plus.svg" alt="">
+                        </button>
+
+                        <div class="bill">
+                            $ 2.90
+                        </div>
+                    </div>
+
+                    <!-- PLACE ORDER -->
+                    <button class="place__order">
+                        ADD TO ORDER
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- CARD BODY -->
+        <div class="card__body">
+            <!-- CARD IMAGE -->
+            <div class="card__image">
+                <img src="./Images/coffee.png" alt="">
+            </div>
+
+            <!-- CARD CONTENT -->
+            <div class="card__content">
+                <!-- V LINE -->
+                <div class="card__vLine"></div>
+
+                <!--  -->
+                <div class="card__info">
+                    <p class="card__text">Koffie</p>
+                    <div class="card__price">
+                        <p>
+                            $ 2.90
+                        </p>
+                        <img src="./Images/leaf.svg" alt="">
+                    </div>
+
+                    <span></span>
+                </div>
+            </div>
+
+            <!-- CARD BUTTON -->
+            <div>
+                <button class="card__button">
+                    <img src="./Images/plus.svg" alt="">
+                </button>
+            </div>
+            <div class="order">
+                <div class="order__body">
+                    <!-- ORDER CANCEL -->
+                    <div class="order__cancel">
+                        <img src="./Images/close.svg" alt="">
+                    </div>
+
+                    <!-- ORDER IMAGE -->
+                    <div class="order__image">
+                        <img src="./Images/coffee.png" alt="">
+                    </div>
+
+                    <!-- ORDER NAME -->
+                    <div class="order__name">
+                        Koffie
+                    </div>
+
+                    <!-- ORDER PRICE -->
+                    <div class="order__price">
+                        $ 2.90
+                    </div>
+
+                    <!-- ORDER QUANTITY -->
+                    <div class="order__quantity">
+                        <button class="order__button dec">
+                            <img src="./Images/minus.svg" alt="">
+                        </button>
+                        <div class="quantity">3</div>
+                        <button class="order__button inc">
+                            <img src="./Images/plus.svg" alt="">
+                        </button>
+
+                        <div class="bill">
+                            $ 2.90
+                        </div>
+                    </div>
+
+                    <!-- PLACE ORDER -->
+                    <button class="place__order">
+                        ADD TO ORDER
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer">
+            <p class="popup">0 / 20</p>
+            <div class="f__item f__item__active">
+                <img src="./Images/book.svg" alt="">
+                <a href="#">Menu</a>
+            </div>
+            <div class="f__item">
+                <img src="./Images/bill.svg" alt="">
+                <a href="#">Bill</a>
+            </div>
+            <div class="f__item">
+                <img src="./Images/order.svg" alt="">
+                <a href="#">Order</a>
+            </div>
+            <div class="f__item">
+                <img src="./Images/service.svg" alt="">
+                <a href="#">Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JAVASCRIPT -->
+    <script src="./Index.js"></script>
+</body>
+
+</html>
